@@ -805,3 +805,8 @@
 .conf-img {
     width: 90%;
 }
+
+.input-sm {
+    width: 48%;
+    border-radius: 8px !important;
+}
