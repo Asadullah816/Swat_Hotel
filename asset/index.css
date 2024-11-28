@@ -801,3 +801,7 @@
     border: none;
     background-color: white;
 }
+
+.conf-img {
+    width: 90%;
+}
