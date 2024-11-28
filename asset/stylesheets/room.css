@@ -1,0 +1,405 @@
+:root {
+    --bg-primary: #F3FFEC;
+    --primary: #444444;
+    --main: #389000;
+    --bg: linear-gradient(180deg, #F3FFEC 0%, rgba(243, 255, 236, 0) 100%);
+
+}
+
+.tour-hero {
+    background-image: url('../images/room-hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+}
+
+.tour-about-bg {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #F3FFEC 0%, rgba(243, 255, 236, 0) 100%);
+}
+
+.tour-content {
+    padding-top: 100px;
+}
+
+.tour-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: center;
+    color: var(--primary);
+}
+
+.tour-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    text-align: center;
+    color: var(--primary);
+    padding-top: 12px;
+}
+
+
+/* =============== room section ============= */
+.room-section {
+    background-color: var(--bg-primary);
+    margin-top: 0px;
+}
+
+.room-content-col {
+    padding: 100px 20px 100px 225px;
+
+}
+
+.room-content h4 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: var(--primary);
+}
+
+.room-content p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: justify;
+    padding-top: 10px;
+    color: var(--primary);
+}
+
+.room-content h5 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: justify;
+    padding-top: 10px;
+    color: var(--primary);
+    padding-bottom: 20px;
+}
+
+.room-ol {
+    padding-left: 0px;
+
+}
+
+.room-image img {
+    width: 100%;
+}
+
+.room-btn a {
+    color: white;
+    background-color: var(--main);
+    text-decoration: none;
+}
+
+.room-btn a:hover {
+    color: var(--main);
+    background: transparent;
+}
+
+.gallery-section {
+    margin-top: 100px;
+}
+
+.gallery-section h4 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.gallery-image {
+    margin-top: 62px;
+    padding-right: 28px;
+}
+
+.gallery-image img {
+    width: 100%;
+}
+
+.gallery-image2 {
+    margin-top: 62px;
+    padding-left: 28px;
+}
+
+.gallery-image2 img {
+    width: 100%;
+}
+
+/* ================================================== */
+@media(max-width:1500px) {
+    .room-content-col {
+        padding: 50px 40px 80px 75px;
+    }
+
+    .room-image {
+        padding: 0px !important;
+    }
+
+    .room-image img {
+        object-fit: cover;
+        /* height: 603px; */
+    }
+
+    .prev-btn {
+        left: 20px !important;
+    }
+
+    .gallery-image {
+        padding-right: 30px;
+    }
+
+    .gallery-image2 {
+        padding-left: 30px;
+    }
+}
+
+@media(max-width:1300px) {
+    .room-content-col {
+        padding: 48px 0px 60px 85px;
+    }
+
+    .room-image-col {
+        height: 600px;
+    }
+
+    .gallery-image {
+        padding-right: 27px;
+    }
+
+    .room-image {
+        padding-left: 30px !important;
+    }
+
+    .gallery-image2 {
+        padding-left: 27px;
+    }
+
+    .next-btn2 {
+        right: 12px !important;
+    }
+
+    .prev-btn2 {
+        left: 12px !important;
+    }
+}
+
+@media(max-width:1100px) {
+    .room-content-col {
+        padding: 70px 45px;
+    }
+
+    .room-image {
+        padding: 0px !important;
+    }
+
+    .gallery-image {
+        margin-top: 30px;
+        padding-right: 15px;
+    }
+
+    .gallery-image2 {
+        margin-top: 30px;
+        padding-left: 15px;
+    }
+
+    .room-sec {
+        height: 460px;
+    }
+}
+
+@media(max-width:767px) {
+    .room-content-col {
+        padding: 50px 18px;
+    }
+
+    .room-sec {
+        height: 303px;
+    }
+
+    .prev-btn2 {
+        top: 42%;
+    }
+
+    .next-btn2 {
+        top: 42%;
+    }
+
+    .room-image img {
+        /* height: auto; */
+    }
+
+    /* .room-image img {
+        height: auto;
+    } */
+
+    .room-row {
+        margin-top: 24px;
+        flex-direction: column-reverse;
+    }
+
+    .room-sec2 {
+        height: 100%;
+    }
+
+    .room-image-col {
+        height: 295px;
+    }
+}
+
+/* =============================================== */
+/* =============================================== */
+/* =============================================== */
+.room-image-col {
+    position: relative;
+}
+
+.room-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nroom-img {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.show {
+    transition: all .3s;
+    opacity: 1;
+}
+
+.next {
+    border: none;
+    color: var(--main);
+    background: transparent;
+}
+
+.prev {
+    border: none;
+    color: var(--main);
+    background: transparent;
+}
+
+.next-btn {
+    right: 20px;
+    top: 40%;
+}
+
+.prev-btn {
+    left: 60px;
+    top: 40%;
+}
+
+.room-btn {
+    z-index: 1000;
+}
+
+.room-slide-btn {
+    position: absolute;
+    border: 100px;
+    background-color: var(--bg-primary);
+    border-radius: 100px;
+    padding: 4px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================ Rooms ================= */
+/* ================ Rooms ================= */
+.room-sec {
+    position: relative;
+}
+
+
+.room-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nroom-img {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.show {
+    transition: all .3s;
+    opacity: 1;
+}
+
+.next {
+    border: none;
+    color: var(--main);
+    background: transparent;
+}
+
+.prev {
+    border: none;
+    color: var(--main);
+    background: transparent;
+}
+
+.next-btn {
+    right: 20px;
+    top: 48%;
+}
+
+.prev-btn {
+    left: 60px;
+    top: 48%;
+}
+
+.room-btn {
+    z-index: 1000;
+}
+
+.room-slide-btn {
+    position: absolute;
+    border: 100px;
+    background-color: var(--bg-primary);
+    border-radius: 100px;
+    padding: 4px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon {
+    padding: 4px 9px;
+}
+
+.feature-icon img {
+    width: 16px;
+    ;
+}
+
+.room-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room-price span {
+    color: var(--main);
+    font-size: 30px;
+}

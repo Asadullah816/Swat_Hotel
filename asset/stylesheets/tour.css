@@ -1,0 +1,237 @@
+:root {
+    --bg-primary: #F3FFEC;
+    --primary: #444444;
+    --main: #389000;
+    --bg: linear-gradient(180deg, #F3FFEC 0%, rgba(243, 255, 236, 0) 100%);
+
+}
+
+.tour-hero {
+    background-image: url('../images/tour-about.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    background-size: cover;
+}
+
+.tour-about-bg {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(180deg, #F3FFEC 0%, rgba(243, 255, 236, 0) 100%); */
+}
+
+.tour-content {
+    padding-top: 100px;
+}
+
+.tour-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: center;
+    color: var(--primary);
+}
+
+.tour-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    text-align: center;
+    color: var(--primary);
+    padding-top: 12px;
+}
+
+/* =========================================== SPOT SECTION ============================= */
+.spots-section {
+    margin-top: 200px;
+}
+
+.spot-container {
+    border: 1px solid #4444446e;
+    border-radius: 8px;
+    padding: 12px 0px;
+    margin-top: 80px;
+}
+
+.spot-content {
+    padding: 40px;
+    padding-bottom: 20px;
+
+}
+
+.spot-content h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0.005em;
+    color: var(--primary);
+    border-bottom: 2px solid var(--main);
+}
+
+.spot-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    color: var(--primary);
+    padding: 20px 0px;
+    padding-right: 125px;
+}
+
+.spot-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    text-align: justify;
+    padding-right: 50px;
+    color: var(--primary);
+}
+
+.spot-loc {
+    padding-top: 100px;
+}
+
+.spot-loc p {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: black;
+}
+
+.loc-span {
+    padding-left: 6px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.loc-link {
+    padding-right: 10px;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+
+.loc-link:hover {
+    color: var(--main);
+}
+
+
+
+@media(max-width:1600px) {
+    .spot-loc {
+        padding-top: 35px;
+    }
+
+    .spot-content {
+        padding: 25px;
+    }
+
+    .left-spot {
+        height: 100%;
+    }
+}
+
+@media(max-width:1430px) {
+    .left-spot img {
+        height: auto !important;
+    }
+
+    .spot-content {
+        padding: 15px;
+    }
+
+    .spot-content p {
+        padding-right: 0px;
+    }
+
+    .spot-loc p {
+        padding-right: 40px;
+    }
+}
+
+@media(max-width:1020px) {
+    .right-row {
+        flex-direction: column-reverse;
+    }
+
+    .spot-image {
+        position: relative;
+    }
+
+    .spot-overlay {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.486);
+    }
+
+    .spot-overlay h2 {
+        font-size: 52px;
+        font-weight: 600;
+        color: white;
+        border-bottom: 6px solid var(--main);
+    }
+
+    .spot-content {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .spot-content h2 {
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .spot-title {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .spot-content {
+        padding: 0px;
+    }
+
+    .spot-content h2 {
+        padding-right: 0px;
+    }
+    .spot-loc{
+        flex-direction: column;
+    }
+    .loc-link{
+        padding-top: 20px;
+    }
+    .spot-loc p {
+        padding-right: 10px;
+    }
+
+    .spots-section {
+        margin-top: 0px;
+    }
+
+    .spot-overlay h2 {
+        font-size: 32px;
+        font-weight: 600;
+        color: white;
+        border-bottom: 3px solid var(--main);
+    }
+}
+
+@media(max-width:424px) {
+    p {
+        font-size: 14px;
+    }
+}
