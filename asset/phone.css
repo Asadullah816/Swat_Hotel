@@ -451,7 +451,8 @@
     .restaurant-content h2,
     .car-content h2,
     .gatway-content h2,
-    .form-content h2 {
+    .form-content h2,
+    .spot-content h2 {
         font-size: 28px !important;
         line-height: 34px !important;
     }
