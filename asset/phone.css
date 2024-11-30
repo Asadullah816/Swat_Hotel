@@ -238,7 +238,7 @@
     }
 
     .restaurent {
-        margin-top: 120px;
+        margin-top: 62px;
     }
 
     .rest-sm-col {
@@ -392,7 +392,14 @@
     .rest-images-row {
         width: 100%;
         margin: auto;
+        display: flex;
+        row-gap: 12px;
+        flex-direction: column;
         padding: 0px;
+    }
+
+    .rest-col {
+        width: 100%;
     }
 
     .conf-img {
@@ -413,6 +420,62 @@
     /* ======================================================== */
     .rest-overlay {
         opacity: 1 !important;
+    }
+
+    .room-section,
+    .conf-section,
+    .ts-section,
+    .ts-car,
+    .gallery-section,
+    .about-para-section,
+    .spot-container,
+    .car-images-sec,
+    .map-section,
+    .about-icon-section,
+    .gatway-section,
+    .contact-add,
+    .contact-form-section {
+        margin-top: 48px !important;
+    }
+
+    .about-icons {
+        margin: 15px 0px !important;
+    }
+
+    .room-content h2,
+    .rest-content h2,
+    .conf-content h2,
+    .ts-content h2,
+    .ts-car-content h2,
+    .gallery-section h4,
+    .restaurant-content h2,
+    .car-content h2,
+    .gatway-content h2,
+    .form-content h2 {
+        font-size: 28px !important;
+        line-height: 34px !important;
+    }
+
+    .conf-img {
+        padding: 0px;
+    }
+
+    .gallery-image2,
+    .gallery-image,
+    .car-col {
+        margin-top: 15px !important;
+    }
+
+    .menu-image {
+        margin: 0px !important;
+    }
+
+    .about-para-img {
+        padding: 0px 0px 12px 0px !important;
+    }
+
+    .conf-section {
+        padding-bottom: 0px;
     }
 
 }

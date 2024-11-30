@@ -810,3 +810,7 @@
     width: 48%;
     border-radius: 8px !important;
 }
+
+.room-price span {
+    display: none;
+}
